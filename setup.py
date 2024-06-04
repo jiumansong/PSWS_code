@@ -25,9 +25,9 @@ def get_extensions():
 
 if __name__ == "__main__":
     setup(
-        name='PS_VIT_extension',
+        name='PS',
         version='new.1',
-        description='progressive sampling extension',
+        description='bag extension',
         packages=find_packages(),
         ext_modules=get_extensions(),
         cmdclass={'build_ext': BuildExtension},   
