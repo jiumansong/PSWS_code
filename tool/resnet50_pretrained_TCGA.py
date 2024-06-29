@@ -44,6 +44,7 @@ def get_pretrained_url(key):
 def resnet50(pretrained, **kwargs):
     model = ResNetTrunk(Bottleneck, [3, 4, 6, 3], **kwargs)
     if pretrained:
+        #Mingu Kang."Self-supervised pre-trained weights on TCGA," Github, 2023, https://github.com/lunit-io/benchmark-ssl-pathology/releases/tag/pretrained-weights
         file_path = 'the path of bt_rn50_ep200.torch'
         #the path of mocov2_rn50_ep200.torch'
         #the path of swav_rn50_ep200.torch'
